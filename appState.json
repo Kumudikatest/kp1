@@ -1,0 +1,217 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "26f2f163-643b-40ec-8744-7b3ad1426dcb": {
+        "id": "26f2f163-643b-40ec-8744-7b3ad1426dcb",
+        "parent": null,
+        "name": "kp1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "d1df0d35-88e5-4e71-9745-a8474e6c38c8",
+          "f44d9c54-6862-4de5-9fc2-812a9a61c333",
+          "b427748f-ae60-4562-b9b5-9ed43d418212"
+        ],
+        "isRemovable": false,
+        "filePath": "kp1"
+      },
+      "d1df0d35-88e5-4e71-9745-a8474e6c38c8": {
+        "id": "d1df0d35-88e5-4e71-9745-a8474e6c38c8",
+        "parent": "26f2f163-643b-40ec-8744-7b3ad1426dcb",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kp1/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "f44d9c54-6862-4de5-9fc2-812a9a61c333": {
+        "id": "f44d9c54-6862-4de5-9fc2-812a9a61c333",
+        "parent": "26f2f163-643b-40ec-8744-7b3ad1426dcb",
+        "name": "p1.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kp1/p1.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python2.7",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1496496get",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "1e7e4678-5c5b-4a1e-85ac-b9bf2361762e": {
+            "id": "1e7e4678-5c5b-4a1e-85ac-b9bf2361762e",
+            "name": "Unnamed event",
+            "functionId": "f44d9c54-6862-4de5-9fc2-812a9a61c333",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "b427748f-ae60-4562-b9b5-9ed43d418212": {
+        "id": "b427748f-ae60-4562-b9b5-9ed43d418212",
+        "parent": "26f2f163-643b-40ec-8744-7b3ad1426dcb",
+        "name": "p2.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kp1/p2.py",
+        "code": "def handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1PSTestget",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "45df2499-f113-468c-aa23-943ee1568706": {
+            "id": "45df2499-f113-468c-aa23-943ee1568706",
+            "name": "Unnamed event",
+            "functionId": "b427748f-ae60-4562-b9b5-9ed43d418212",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "deletedFiles": [
+      "kp1/__init__.py"
+    ],
+    "rootNode": "26f2f163-643b-40ec-8744-7b3ad1426dcb",
+    "openFiles": [
+      "d1df0d35-88e5-4e71-9745-a8474e6c38c8",
+      "f44d9c54-6862-4de5-9fc2-812a9a61c333",
+      "b427748f-ae60-4562-b9b5-9ed43d418212"
+    ],
+    "currentFileId": "d1df0d35-88e5-4e71-9745-a8474e6c38c8",
+    "resources": {
+      "apigusEast1496496get": {
+        "name": "apigusEast1496496get",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "496",
+          "apiId": "vhun1ru9cd",
+          "endpointType": "EDGE",
+          "rootResourceId": "yr36hrjzfa",
+          "existingResources": {
+            "/496": "t3mbwy",
+            "/": "yr36hrjzfa"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/496",
+          "resourceName": "496",
+          "resourceId": "t3mbwy",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "496",
+          "stageDeploymentId": "vj9wse",
+          "mode": 1
+        }
+      },
+      "apigusEast1PSTestget": {
+        "name": "apigusEast1PSTestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "PSTest",
+          "apiId": "ub4zx6stif",
+          "endpointType": "EDGE",
+          "rootResourceId": "on31xn1rk3",
+          "existingResources": {
+            "/": "on31xn1rk3"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "on31xn1rk3",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "q9n3cn",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "f44d9c54-6862-4de5-9fc2-812a9a61c333",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/kp1",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      },
+      {
+        "lambdaId": "b427748f-ae60-4562-b9b5-9ed43d418212",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/kp1",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "kp1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1563795282111
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kp1",
+      "url": "https://github.com/Kumudikatest/kp1"
+    }
+  }
+}
